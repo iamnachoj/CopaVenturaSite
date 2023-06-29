@@ -30,3 +30,16 @@
     transform: translateX(0);
   }
 }
+
+@keyframes skewAnimation {
+  0% {
+    transform: skewY(0deg) skewX(0);
+  }
+  50% {
+    transform: skewY(-4deg) skewX(-10deg);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+  100% {
+    transform: skewY(0deg) skewX(0);
+  }
+}
