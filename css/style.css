@@ -152,6 +152,33 @@ body {
   transform: translateY(-0.1rem);
   box-shadow: 0 1rem 2rem rgba(32, 32, 32, 0.15); }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(32, 32, 32, 0.4);
+    border-radius: .2rem;
+    position: absolute;
+    transition: all .1s;
+    z-index: 10;
+    outline-offset: 1rem; }
+    .composition__photo--p1 {
+      top: -2rem;
+      left: 2%; }
+    .composition__photo--p2 {
+      top: 2rem;
+      left: 47%; }
+    .composition__photo--p3 {
+      top: 12rem;
+      left: 20%; }
+    .composition__photo:hover {
+      outline: 0.5rem solid #55c57a;
+      transform: scale(1.3) translateY(-0.9rem);
+      box-shadow: 0 2.5rem 2rem rgba(32, 32, 32, 0.6);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to left top, rgba(126, 213, 111, 0.75), rgba(40, 180, 133, 0.75)), url("../img/hero-aereal-house.jpg");
