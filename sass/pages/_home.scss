@@ -3,3 +3,20 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.section-features {
+  padding: 20rem 0;
+  height: 95vh;
+  background-image: linear-gradient(
+                  to left top,
+                  rgba($color-primary-dark, 0.75),
+                  rgba($color-primary-light, 0.75)),
+                  url("../../img/aereal-town.jpg");
+  background-size: cover;
+  background-position: center 75%;
+  transform: skewY(-5deg);
+  margin-top: -10rem;
+  & > * {
+    transform: skewY(5deg);
+  }
+}
