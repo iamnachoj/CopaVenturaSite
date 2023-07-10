@@ -24,6 +24,11 @@
     color: $color-grey-dark;
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
   &--animated {
     animation-name: moveInBottom;
     animation-duration: 1s;
