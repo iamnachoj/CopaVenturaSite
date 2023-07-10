@@ -326,6 +326,7 @@ body {
   .story > * {
     transform: skewX(12deg); }
   .story__shape {
+    position: relative;
     width: 15rem;
     height: 15rem;
     float: left;
@@ -336,7 +337,27 @@ body {
     transform: translateX(-3rem) skewX(12deg); }
     .story__shape img {
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      transition: all .5s;
+      transform: scale(120%); }
+    .story__shape figcaption {
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      letter-spacing: .3rem;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      opacity: 0;
+      transition: all .5s; }
+  .story:hover figcaption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover img {
+    filter: blur(0.2rem) brightness(80%);
+    transform: scale(100%); }
 
 .header {
   height: 95vh;
