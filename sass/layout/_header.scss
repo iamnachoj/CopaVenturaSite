@@ -7,6 +7,7 @@
                   url("../../img/aereal-house.jpg");
   background-size: cover;
   background-position: center 65%;
+  --webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative;
 

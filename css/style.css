@@ -74,7 +74,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to left, #68c759, #19924f);
+  background-image: linear-gradient(to left, #6fde9e, #438760);
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
@@ -120,7 +120,7 @@ body {
 .section-features {
   padding: 25rem 0;
   height: 95vh;
-  background-image: linear-gradient(to left top, rgba(25, 146, 79, 0.75), rgba(104, 199, 89, 0.75)), url("../../img/aereal-town.jpg");
+  background-image: linear-gradient(to left top, rgba(67, 135, 96, 0.75), rgba(111, 222, 158, 0.75)), url("../../img/aereal-town.jpg");
   background-size: cover;
   background-position: center 75%;
   transform: skewY(-5deg);
@@ -159,16 +159,16 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #30b562;
+  color: #5ebe88;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #30b562;
+  border-bottom: 1px solid #5ebe88;
   padding: .3rem;
   transition: all .2s; }
 
 .btn-text:hover {
   transform: translateY(-0.5rem);
-  background-color: #30b562;
+  background-color: #5ebe88;
   color: #FFF;
   box-shadow: 0 1rem 2rem rgba(32, 32, 32, 0.15); }
 
@@ -213,7 +213,7 @@ body {
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
-    background-image: linear-gradient(to left, #68c759, #19924f);
+    background-image: linear-gradient(to left, #6fde9e, #438760);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -227,34 +227,74 @@ body {
   .card__side {
     font-size: 2rem;
     height: 50rem;
-    transition: all 1.3s ease;
+    transition: all .9s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(32, 32, 32, 0.15); }
     .card__side--front {
       background-color: #FFF; }
     .card__side--back {
-      transform: rotateY(-180deg); }
+      transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #68c759, #19924f); }
+        background-image: linear-gradient(to right bottom, #6fde9e, #438760); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #ffeaa7, #be783b); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-position: center 45%;
+    background-blend-mode: screen;
+    --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #6fde9e, #438760), url(../img/nat-1.jpg);
+      background-position: center 85%; }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #ffeaa7, #be783b), url(../../img/nat-2.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-3.jpg); }
+  .card__heading {
+    padding: 1rem;
+    text-transform: uppercase;
+    display: inline;
+    color: #FFF;
+    font-weight: 300;
+    position: absolute;
+    top: 15rem;
+    right: 1rem;
+    opacity: .88; }
+    .card__heading--1 {
+      background-image: linear-gradient(to right bottom, #6fde9e, #438760); }
+    .card__heading--2 {
+      background-image: linear-gradient(to right bottom, #ffeaa7, #be783b); }
+    .card__heading--3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  .card__details {
+    list-style: none;
+    text-align: center;
+    padding: 1rem; }
+    .card__details li {
+      font-size: 1.7rem;
+      line-height: 4.2rem;
+      border-bottom: 1px solid #f7f7f7; }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to left top, rgba(104, 199, 89, 0.75), rgba(25, 146, 79, 0.75)), url("../../img/aereal-house.jpg");
+  background-image: linear-gradient(to left top, rgba(111, 222, 158, 0.75), rgba(67, 135, 96, 0.75)), url("../../img/aereal-house.jpg");
   background-size: cover;
   background-position: center 65%;
+  --webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative; }
   .header__logo-box {
