@@ -134,8 +134,8 @@ body {
   background-color: #f7f7f7; }
 
 .section-stories {
-  padding: 0 0 15rem;
-  background-color: #f7f7f7; }
+  position: relative;
+  padding: 15rem 0 15rem; }
 
 .btn:link, .btn :visited {
   font-size: 1.6rem;
@@ -317,7 +317,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(32, 32, 32, 0.1);
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -358,6 +358,20 @@ body {
   .story:hover img {
     filter: blur(0.2rem) brightness(80%);
     transform: scale(100%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  opacity: .3;
+  overflow: hidden; }
+  .bg-video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 95vh;
