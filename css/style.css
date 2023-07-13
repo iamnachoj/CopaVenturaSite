@@ -137,6 +137,21 @@ body {
   position: relative;
   padding: 15rem 0 15rem; }
 
+.section-book {
+  padding: 15rem 0 15rem;
+  background-image: linear-gradient(to right bottom, #6fde9e, #438760); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url("../../img/nat-7.jpg");
+  background-size: cover;
+  background-position: center 45%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(32, 32, 32, 0.25);
+  height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
+
 .btn:link, .btn :visited {
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -252,7 +267,7 @@ body {
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #6fde9e, #438760); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #ffeaa7, #be783b); }
+        background-image: linear-gradient(to right bottom, #ffeaa7, #d0410b); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
@@ -270,7 +285,7 @@ body {
       background-image: linear-gradient(to right bottom, #6fde9e, #438760), url(../img/nat-1.jpg);
       background-position: center 85%; }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #ffeaa7, #be783b), url(../../img/nat-2.jpg); }
+      background-image: linear-gradient(to right bottom, #ffeaa7, #d0410b), url(../../img/nat-2.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-3.jpg); }
   .card__heading {
@@ -286,7 +301,7 @@ body {
     .card__heading--1 {
       background-image: linear-gradient(to right bottom, #6fde9e, #438760); }
     .card__heading--2 {
-      background-image: linear-gradient(to right bottom, #ffeaa7, #be783b); }
+      background-image: linear-gradient(to right bottom, #ffeaa7, #d0410b); }
     .card__heading--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card__details {
@@ -372,6 +387,44 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 3px solid transparent;
+  transition: all .3s; }
+  .form__input::placeholder {
+    color: #b9b9b9; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(32, 32, 32, 0.1);
+    border-bottom: 3px solid #5ebe88; }
+  .form__input:focus:invalid {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(32, 32, 32, 0.1);
+    border-bottom: 3px solid #d0410b; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
 
 .header {
   height: 95vh;
