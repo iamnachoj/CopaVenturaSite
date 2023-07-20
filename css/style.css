@@ -85,6 +85,8 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  .heading-tertiary--white {
+    color: #FFF; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -480,7 +482,7 @@ body {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -510,3 +512,90 @@ body {
     width: calc((2 * (100% - (3 * 4rem))) / 4 + 4rem); }
   .row .col-3-of-4 {
     width: calc((3 * (100% - (3 * 4rem))) / 4 + 2 * 4rem); }
+
+.footer {
+  background-color: #3c3c3c;
+  padding: 3rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 6rem; }
+  .footer__logo {
+    width: 6.5rem;
+    margin-top: 2rem; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+  .footer__link:hover, .footer__link:active {
+    color: #5ebe88;
+    box-shadow: 0 1rem 2rem rgba(32, 32, 32, 0.4); }
+  .footer__copyright {
+    color: #FFF; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#6fde9e, #438760);
+  z-index: 1000;
+  transform: scale(80); }
+
+.navigation__button {
+  background-color: #FFF;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000; }
+
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center; }
+
+.navigation__item {
+  margin: 1rem;
+  transition: all .2s; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFF 50%);
+  background-size: 225%;
+  transition: all .2s; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #5ebe88;
+  transform: translateX(1rem); }
