@@ -46,7 +46,7 @@
                     <span class="heading-primary--main">La Copa Ventura</span>
                     <span class="heading-primary--sub">El Corazón de la Serranía</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Descubre la finca</a>
+                <a href="#section-reservations" class="btn btn--white btn--animated">Descubre la finca</a>
             </div>
         </header>
         <main>
@@ -122,7 +122,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-reservations">
+            <section class="section-reservations" id="section-reservations">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Reservas más populares
@@ -147,7 +147,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price-box--only">Sólo</p>
                                         <p class="card__price-box--value">360€</p>
-                                        <a href="#" class="btn btn--white btn--animated">Reservar</a>
+                                        <a href="#popup" class="btn btn--white btn--animated">Reservar</a>
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +171,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price-box--only">Sólo</p>
                                         <p class="card__price-box--value">620€</p>
-                                        <a href="#" class="btn btn--white btn--animated">Reservar</a>
+                                        <a href="#popup" class="btn btn--white btn--animated">Reservar</a>
                                     </div>
                                 </div>
                             </div>
@@ -196,7 +196,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price-box--only">Sólo</p>
                                         <p class="card__price-box--value">1110€</p>
-                                        <a href="#" class="btn btn--white btn--animated">Reservar</a>
+                                        <a href="#popup" class="btn btn--white btn--animated">Reservar</a>
                                     </div>
                                 </div>
                             </div>
@@ -323,5 +323,29 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-3.jpg" alt="Benalauría">
+                    <img src="img/nat-5.jpg" alt="Vistas Genal">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-reservations" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Reserva ahora</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small" >Importante &ndash; Antes de continuar:</h3>
+                    <p class="popup__text u-margin-bottom-medium">
+                        Es importante que tengan en cuenta lo siguiente: nuestra casa de montaña opera
+                        únicamente bajo demanda. Por favor, contáctanos para verificar disponibilidad de fechas antes de
+                        hacer tu reserva. Para llegar a la casa desde la carretera nacional, deberás subir 200 metros por
+                        un camino de montaña, aunque podemos asegurar que cualquier coche puede hacerlo sin problema. Además, recuerda
+                        que solo aceptamos reservas de al menos una semana. Nos encantará recibirlos en nuestro
+                        acogedora casa y asegurarnos de que disfrutéis de una experiencia inolvidable rodeado de la naturaleza.
+                        ¡Esperamos tu contacto pronto!
+                    </p>
+                    <a href="#" class="btn btn--green">Mostrar contacto</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
