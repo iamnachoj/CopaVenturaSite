@@ -12,7 +12,17 @@
     right: 6.5rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
-    transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);;
+    transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(tablet-portrait) {
+      top: 4.3rem;
+      right: 4.3rem;
+    }
+
+    @include respond(phone) {
+      top: 3.3rem;
+      right: 3.3rem;
+    }
   }
 
   &__button {
@@ -27,6 +37,18 @@
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
     text-align: center;
+
+    @include respond(tablet-portrait) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      height: 6rem;
+      width: 6rem;
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__nav {
@@ -64,6 +86,9 @@
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
       background-size: 225%;
       transition: all .2s;
+      @include respond(phone) {
+        font-size: 2.3rem;
+      }
     }
     &:hover,
     &:active{
@@ -89,6 +114,10 @@
   &__icon {
     margin-top: 3.5rem;
     position: relative;
+
+    @include respond(phone) {
+      margin-top: 3rem;
+    }
 
     &,
     &::before,

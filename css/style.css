@@ -1,3 +1,12 @@
+/*
+0 - 600px : Phone
+600 - 900px : Tablet portrait
+900 - 1200px : Tablet landscape
+1200 - 1800px : Desktop
+1800px+ : Big Desktop
+
+for Media queries, the use of em is best practice. 1em = 16px, i.e. 600px = 37.5em
+*/
 *,
 *::after,
 *::before {
@@ -7,10 +16,19 @@
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 58%; } }
 
 body {
   padding: 2rem;
   box-sizing: border-box; }
+  @media (max-width: 75em) {
+    body {
+      padding: 0; } }
 
 @keyframes moveInLeft {
   0% {
@@ -80,6 +98,12 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   animation: skewAnimation 12s infinite; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -537,6 +561,9 @@ body {
   --webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -555,6 +582,12 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 5rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 4rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row::after {
     content: "";
     display: table;
@@ -563,6 +596,13 @@ body {
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 4rem; }
+      @media (max-width: 56.25em) {
+        .row [class^='col-']:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 4rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^='col-'] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 4rem) / 2); }
   .row .col-1-of-3 {
@@ -615,6 +655,14 @@ body {
   background-image: radial-gradient(#6fde9e, #438760);
   z-index: 1000;
   transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.3rem;
+      right: 4.3rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.3rem;
+      right: 3.3rem; } }
 
 .navigation__button {
   background-color: #FFF;
@@ -628,6 +676,16 @@ body {
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(32, 32, 32, 0.1);
   text-align: center; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      height: 6rem;
+      width: 6rem;
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -662,6 +720,9 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFF 50%);
   background-size: 225%;
   transition: all .2s; }
+  @media (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2.3rem; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -680,6 +741,9 @@ body {
 .navigation__icon {
   margin-top: 3.5rem;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .navigation__icon {
+      margin-top: 3rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
