@@ -122,6 +122,9 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
@@ -131,6 +134,9 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-top-big {
+      margin-top: 5rem; } }
 
 .u-margin-top-medium {
   margin-top: 4rem; }
@@ -142,30 +148,46 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 18rem 0; } }
 
 .section-features {
   padding: 25rem 0;
   height: 95vh;
   background-image: linear-gradient(to left top, rgba(67, 135, 96, 0.75), rgba(111, 222, 158, 0.75)), url("../../img/aereal-town.jpg");
-  background-size: cover;
+  background-size: auto;
   background-position: center 75%;
   transform: skewY(-5deg);
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(5deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      height: auto;
+      padding: 15rem 0; } }
 
 .section-reservations {
   margin-top: -20vh;
   padding: 25rem 0 15rem;
   background-color: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .section-reservations {
+      padding: 22rem 0 1rem; } }
 
 .section-stories {
   position: relative;
-  padding: 15rem 0 15rem; }
+  padding: 15rem 0; }
+  @media (max-width: 56.25em) {
+    .section-stories {
+      padding: 10rem 0; } }
 
 .section-book {
-  padding: 15rem 0 15rem;
+  padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #6fde9e, #438760); }
+  @media (max-width: 56.25em) {
+    .section-book {
+      padding: 10rem 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url("../../img/nat-7.jpg");
@@ -563,7 +585,7 @@ body {
   position: relative; }
   @media (max-width: 37.5em) {
     .header {
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
