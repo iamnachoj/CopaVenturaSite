@@ -6,6 +6,9 @@
   @include respond(tablet-portrait) {
     padding: 18rem 0;
   }
+  @include respond(phone) {
+    padding: 18rem 2rem;
+  }
 }
 
 .section-features {
@@ -28,6 +31,9 @@
     height: auto;
     padding: 15rem 0;
   }
+  @include respond(phone) {
+    padding: 15rem 2rem;
+  }
 }
 
 .section-reservations {
@@ -38,6 +44,9 @@
   @include respond(tablet-portrait) {
     padding: 22rem 0 1rem;
   }
+  @include respond(phone) {
+    padding: 22rem 2rem 1rem;
+  }
 }
 
 .section-stories {
@@ -46,6 +55,9 @@
 
   @include respond(tablet-portrait) {
     padding: 10rem 0;
+  }
+  @include respond(phone) {
+    padding: 10rem 2rem;
   }
 }
 
@@ -67,10 +79,39 @@
   background-position: center 45%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
-  height: 50rem;
+
+  @include respond(tablet-landscape){
+    background-image: linear-gradient(105deg,
+            rgba($color-white, .85) 0%,
+            rgba($color-white, .85) 70%,
+            transparent 70%),
+            url("../../img/nat-7.jpg");
+    margin: 5rem;
+  }
+
+  @include respond(tablet-portrait){
+    margin: 2rem;
+  }
+
+  @include respond(phone){
+    background-image: linear-gradient(105deg,
+            rgba($color-white, .85) 0%,
+            rgba($color-white, .85) 100%,
+            transparent 70%),
+    url("../../img/nat-7.jpg");
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tablet-landscape){
+      width: 75%;
+    }
+
+    @include respond(phone){
+      width: 100%;
+      padding: 3rem;
+    }
   }
 }

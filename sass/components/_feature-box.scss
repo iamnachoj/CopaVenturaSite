@@ -16,5 +16,8 @@
 
   &:hover {
     transform: translateY(-1rem) scale(1.06);
+    @include respond(tablet-portrait){
+      transform: none;
+    }
   }
 }

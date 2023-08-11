@@ -46,8 +46,8 @@
     @include respond(phone) {
       height: 6rem;
       width: 6rem;
-      top: 3rem;
-      right: 3rem;
+      top: 3.3rem;
+      right: 3.3rem;
     }
   }
 
@@ -87,7 +87,7 @@
       background-size: 225%;
       transition: all .2s;
       @include respond(phone) {
-        font-size: 2.3rem;
+        font-size: 2rem;
       }
     }
     &:hover,

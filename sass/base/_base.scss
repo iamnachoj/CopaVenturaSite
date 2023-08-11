@@ -18,6 +18,9 @@ html {
   @include respond(tablet-landscape) {
     font-size: 58%;
   }
+  @include respond(phone) {
+    font-size: 55%;
+  }
 }
 
 body {

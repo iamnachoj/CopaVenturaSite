@@ -22,11 +22,18 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(.1);
     transition: all .3s;
+    @include respond(phone){
+      width: 95%;
+    }
   }
 
   &__left {
     width: 33.33333%;
     display: table-cell;
+    @include respond(tablet-portrait){
+      width: 0%;
+      display: none;
+    }
   }
 
   &__right {
@@ -34,6 +41,9 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+    @include respond(tablet-portrait){
+      width: 100%;
+    }
   }
 
   &__text {
@@ -42,6 +52,10 @@
     column-gap: 3rem;
     column-rule: 1px solid $color-grey-light-2;
     hyphens: auto;
+
+    @include respond(phone){
+      column-count: 1;
+    }
   }
 
   img {

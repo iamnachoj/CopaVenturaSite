@@ -15,6 +15,10 @@
     border-bottom: 3px solid transparent;
     transition: all .3s;
 
+    @include respond(phone){
+      width: 100%;
+    }
+
     &::placeholder {
       color: $color-grey-light-2;
     }
@@ -52,6 +56,10 @@
   &__radio-group {
     width: 49%;
     display: inline-block;
+    @include respond(phone){
+      width: 100%;
+      margin-bottom: 1rem;
+    }
   }
   
   &__radio-label {
@@ -87,6 +95,4 @@
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
     opacity: 1;
   }
-
-
 }
