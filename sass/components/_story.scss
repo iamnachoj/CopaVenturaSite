@@ -13,6 +13,18 @@
     transform: skewX(12deg);
   }
 
+  @include respond(tablet-portrait){
+    width: 100%;
+    transform: skewX(0);
+    & > * {
+      transform: skewX(0);
+    }
+  }
+  @include respond(phone){
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
   &__shape {
     position: relative;
     width: 15rem;
@@ -22,7 +34,11 @@
     shape-outside: circle(50% at 50% 50%);
     --webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem) skewX(12deg);;
+    transform: translateX(-3rem) skewX(12deg);
+    @include respond(tablet-portrait){
+      transform: none;
+      margin: 0 1rem 0 0;
+    }
 
     img {
       height: 100%;
