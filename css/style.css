@@ -161,7 +161,7 @@ body {
 .section-features {
   padding: 25rem 0;
   height: 95vh;
-  background-image: linear-gradient(to left top, rgba(67, 135, 96, 0.75), rgba(111, 222, 158, 0.75)), url("../../img/aereal-town.jpg");
+  background-image: linear-gradient(to left top, rgba(67, 135, 96, 0.75), rgba(111, 222, 158, 0.75)), url("../img/aereal-town.jpg");
   background-size: auto;
   background-position: center 75%;
   transform: skewY(-5deg);
@@ -205,21 +205,21 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url("../../img/nat-7.jpg");
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url("../img/nat-7.jpg");
   background-size: cover;
   background-position: center 45%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(32, 32, 32, 0.25); }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 70%, transparent 70%), url("../../img/nat-7.jpg");
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 70%, transparent 70%), url("../img/nat-7.jpg");
       margin: 5rem; } }
   @media (max-width: 56.25em) {
     .book {
       margin: 2rem; } }
   @media (max-width: 37.5em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%, transparent 70%), url("../../img/nat-7.jpg"); } }
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%, transparent 70%), url("../img/nat-7.jpg"); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
@@ -397,9 +397,9 @@ body {
       background-image: linear-gradient(to right bottom, #6fde9e, #438760), url(../img/nat-1.jpg);
       background-position: center 85%; }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #ffeaa7, #d0410b), url(../../img/nat-2.jpg); }
+      background-image: linear-gradient(to right bottom, #ffeaa7, #d0410b), url(../img/nat-2.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-3.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-3.jpg); }
   .card__heading {
     padding: 1rem;
     text-transform: uppercase;
@@ -699,7 +699,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to left top, rgba(111, 222, 158, 0.75), rgba(67, 135, 96, 0.75)), url("../../img/aereal-house.jpg");
+  background-image: linear-gradient(to left top, rgba(111, 222, 158, 0.75), rgba(67, 135, 96, 0.75)), url("../img/aereal-house.jpg");
   background-size: cover;
   background-position: center 65%;
   --webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
