@@ -396,9 +396,9 @@ body {
       background-image: linear-gradient(to right bottom, #6fde9e, #438760), url(../img/nat-1.jpg);
       background-position: center 85%; }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #ffeaa7, #d0410b), url(../../img/nat-2.jpg); }
+      background-image: linear-gradient(to right bottom, #ffeaa7, #d0410b), url(../img/nat-2.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-3.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-3.jpg); }
   .card__heading {
     padding: 1rem;
     text-transform: uppercase;
@@ -698,7 +698,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to left top, rgba(111, 222, 158, 0.75), rgba(67, 135, 96, 0.75)), url("../../img/aereal-house.jpg");
+  background-image: linear-gradient(to left top, rgba(111, 222, 158, 0.75), rgba(67, 135, 96, 0.75)), url("img/aereal-house.jpg");
   background-size: cover;
   background-position: center 65%;
   --webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
