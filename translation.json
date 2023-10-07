@@ -50,7 +50,10 @@
     "NO_CAR": "I don't have a car",
     "NEXT": "Next",
     "VISIT_MALAGA": "Visit Málaga",
-    "TERMS_AND_CONDITIONS": "Terms and Conditions"
+    "TERMS_AND_CONDITIONS": "Terms and Conditions",
+    "BEFORE_BOOKING_TITLE": "Important! before booking:",
+    "BEFORE_BOOKING_TEXT": "Our mountain house operates on a first-come, first-served basis. Please contact us to check availability before making your booking. We would also like to warn you that to get to the house from the national road, you will have to drive 200 metres along a mountain road, which can be complicated if you are not used to it, although we can assure you that any car can do it without any problem. Lastly, remember that we only accept bookings of at least one week. And that's all! We will be delighted to welcome you in our cosy house and make sure you enjoy an unforgettable experience surrounded by nature. We look forward to hearing from you soon!",
+    "SHOW_CONTACT": "Show contact"
   },
   "es": {
     "TITLE_PAGE": "Copa Ventura | Descubre la Málaga oculta",
@@ -103,7 +106,10 @@
     "NO_CAR": "No tengo coche",
     "NEXT": "Siguiente",
     "VISIT_MALAGA": "Visita Málaga",
-    "TERMS_AND_CONDITIONS": "Términoss y Condiciones"
+    "TERMS_AND_CONDITIONS": "Términoss y Condiciones",
+    "BEFORE_BOOKING_TITLE": "Importante! Antes de continuar:",
+    "BEFORE_BOOKING_TEXT": "Nuestra casa de montaña funciona por orden de llegada. Póngase en contacto con nosotros para comprobar la disponibilidad antes de hacer su reserva. También le advertimos que para llegar a la casa desde la carretera nacional, tendrá que recorrer 200 metros por una carretera de montaña, que puede ser complicada si no está acostumbrado, aunque le aseguramos que cualquier coche puede hacerlo sin problemas. Por último, recuerda que sólo aceptamos reservas de al menos una semana. ¡Y eso es todo! Estaremos encantados de recibirle en nuestra acogedora casa y hacer que disfrute de una experiencia inolvidable rodeado de naturaleza. ¡Esperamos tener noticias suyas pronto!",
+    "SHOW_CONTACT": "Mostrar contacto"
   },
   "fr": {
     "TITLE_PAGE": "Copa Ventura | Découvrir la Malaga cachée",
@@ -156,6 +162,9 @@
     "NO_CAR": "Je n'ai pas de voiture",
     "NEXT": "Suivant",
     "VISIT_MALAGA": "Visitez Málaga",
-    "TERMS_AND_CONDITIONS": "Conditions générales"
+    "TERMS_AND_CONDITIONS": "Conditions générales",
+    "BEFORE_BOOKING_TITLE": "Important! Avant de continuer:",
+    "BEFORE_BOOKING_TEXT": "Notre maison de montagne fonctionne selon le principe du premier arrivé, premier servi. Veuillez nous contacter pour vérifier la disponibilité avant de faire votre réservation. Nous vous informons également que pour accéder à la maison depuis la route nationale, vous devrez parcourir 200 mètres sur une route de montagne, ce qui peut s'avérer compliqué si vous n'êtes pas habitué, mais nous vous assurons que n'importe quelle voiture peut l'emprunter sans problème. Enfin, n'oubliez pas que nous n'acceptons que des réservations d'au moins une semaine. Et c'est tout ! Nous serons ravis de vous accueillir dans notre maison chaleureuse et de vous faire vivre une expérience inoubliable en pleine nature. Nous nous réjouissons d'ores et déjà d'avoir de vos nouvelles!",
+    "SHOW_CONTACT": "Montrer contact"
   }
 }
